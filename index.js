@@ -6,6 +6,7 @@ export async function init() {
 }
 
 export async function update() {
+  console.log('Updating miner0');
   return program.setTimer('check', 0, 5);
 }
 
