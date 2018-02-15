@@ -6,7 +6,7 @@ export async function init() {
 }
 
 export async function update() {
-  await root.account.set(account);
+  return program.setTimer('check', 0, 5);
 }
 
 export async function timer({ key }) {
