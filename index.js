@@ -1,4 +1,4 @@
-import { root, human, account } from './schema';
+const { root, human, account } = program.refs;
 
 export async function init() {
   await root.account.set(account);
